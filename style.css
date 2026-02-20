@@ -27,13 +27,15 @@ a:hover {
   display: block;
 }
 
-.layout {
-    width: min(1200px, 95%); 
-    margin: 0 auto; 
-    display: flex; 
-    justify-content: space-between;
-    column-gap: 1em;
+.layout{
+  width: min(1600px, 95%); /* or 1600px if you want more breathing room */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;  /* key: centers the group */
+  gap: 2em;                 /* modern replacement for column-gap */
+  align-items: flex-start;
 }
+
 
 .header {
     margin: 1em auto;
@@ -174,16 +176,22 @@ a:hover {
     text-decoration: none;
 }
 
-.panel-small {
-    width: 250px;
+.panel-small{
+  flex: 0 0 250px;  /* lock it to 250px */
 }
 
 .panel-normal {
     width: 500px;
 }
 
-.panel-large {
-    width: 850px;
+.panel-large{
+  flex: 1 1 850px;     /* grow, shrink, preferred base width */
+  max-width: 1000px;   /* optional: keeps it from getting too wide */
+}
+
+
+.panel-extra-large {
+    width: 1450px;
 }
 
 .section {
