@@ -403,8 +403,8 @@ a:hover {
     font-weight: bold;
 }
 .proj-card img {
-    width: 860px;
-    height: 860px;
+    width: 160px !important;
+    height: 160px !important;
     object-fit: cover;
     border-radius: 2px;
     margin-top: 16px;
