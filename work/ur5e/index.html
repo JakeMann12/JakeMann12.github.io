@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Experimenting with the UR5e - Jake Mann" />
+  <title>Experimenting with the UR5e - Jake Mann</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../../assets/images/Site Files/Logo2.png" type="image/x-icon" />
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="../../style.css" />
+
+  <!-- Icons / Fonts -->
+  <script src="https://kit.fontawesome.com/1eccfb7f64.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+  <link href="https://db.onlinewebfonts.com/c/0253e1401c58c5911902cdca02857f0e?family=White+Rabbit+Regular" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="arena">
+
+    <!-- Header (consistent site-wide) -->
+    <div class="header">
+      <div>
+        <a href="../../index.html"><div>Jake Mann</div></a>
+      </div>
+
+      <div class="nav-bar">
+        <a href="../../index.html"><div>About Me</div></a>
+        <div class="vertical-line"></div>
+        <a href="../../work/index.html"><div>Work</div></a>
+        <div class="vertical-line"></div>
+        <a href="../../play/index.html"><div>Play</div></a>
+        <div class="vertical-line"></div>
+        <a href="../../assets/Jake_Mann_Tech_Resume_2025.pdf"><div>CV</div></a>
+      </div>
+
+      <details class="nav-dropdown">
+        <summary></summary>
+        <nav class="dropdown">
+          <a href="../../index.html">About Me</a>
+          <a href="../../work/index.html">Work</a>
+          <a href="../../play/index.html">Play</a>
+          <a href="../../assets/Jake_Mann_Tech_Resume_2025.pdf">CV</a>
+        </nav>
+      </details>
+
+      <div class="overlay" style="z-index: 11"></div>
+    </div>
+
+    <hr />
+
+    <!-- Main centered layout -->
+    <div class="layout">
+
+      <!-- LEFT COLUMN: Summary + Skills -->
+      <div class="panel-small">
+
+        <!-- Summary -->
+        <div class="container" style="z-index: 10;">
+          <div class="container-header">
+            project_summary.txt
+            <div class="circle-container">
+              <div class="circle" style="background-color: #00FF41"></div>
+              <div class="circle" style="background-color: #FF004D"></div>
+            </div>
+          </div>
+
+          <div class="container-content">
+            <div style="margin: 0px auto; font-size: 1.4em; text-align: center;">
+              Experimenting with the UR5e
+            </div>
+
+            <div style="opacity: 0.85;">
+              <hr style="opacity: 0.5;" />
+              <p style="text-align: left; margin: 0 auto;">
+                An exploration of the robot-human interface for chemical pouring. As my first major project of the
+                Graduate portion of my 4+1 degree, my team programmed a Universal Robotics 5e robot to pour and mix
+                cups using a Robotiq Gripper end effector.
+              </p>
+              <!-- Source: Wix UR5e page copy -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Top Skills -->
+        <div class="container" style="z-index: 10;">
+          <div class="container-header">
+            top_skills.txt
+            <div class="circle-container">
+              <div class="circle" style="background-color: #00FF41"></div>
+              <div class="circle" style="background-color: #FF004D"></div>
+            </div>
+          </div>
+
+          <div class="container-content">
+            <ul class="list" style="margin-top: 0;">
+              <li>Rviz and ROS</li>
+              <li>Environment and motion simulation in Gazebo</li>
+              <li>Script implementation in Python</li>
+              <li>Cartesian and Joint Space motion planning</li>
+            </ul>
+            <!-- Source: Wix UR5e page “TOP SKILLS” -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MIDDLE COLUMN: Narrative with alternating image placement -->
+      <div class="panel-large">
+        <div class="container" style="z-index: 10;">
+          <div class="container-header">
+            ur5e.md
+            <div class="circle-container">
+              <div class="circle" style="background-color: #00FF41"></div>
+              <div class="circle" style="background-color: #FF004D"></div>
+            </div>
+          </div>
+
+          <div class="container-content">
+            <div class="section">Experimenting with the UR5e</div>
+
+            <!-- Zig-zag wrapper (CSS lives in style.css) -->
+            <div class="zigzag" style="margin-top: 0.8em;">
+
+              <!-- Row 1: Simulation Testing -->
+              <div class="zig-row">
+                <div class="zig-text">
+                  <div style="font-size: 1.3em;">Simulation Testing</div>
+                  <p style="opacity: 0.9;">
+                    In order to test the limits of the robot before implementation, I designed a gripper-compatible cup
+                    that could be used in simulation and 3D printed for in-lab use.
+                  </p>
+                </div>
+                <div class="zig-media">
+                  <div class="container proj-card" style="margin: 0;">
+                    <div class="container-header">simulation_cup.mp4
+                        <div class="circle-container">
+                        <div class="circle" style="background-color: #00FF41"></div>
+                        <div class="circle" style="background-color: #FF004D"></div>
+                        </div>
+                    </div>
+                    <div class="container-content">
+                        <video
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            preload="metadata"
+                            style="width: 90%; height: auto">
+                            <source src="../../assets/images/UR5e/simulation.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                            </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Row 2: Implementation (auto-flips to image-left via zigzag CSS) -->
+              <div class="zig-row">
+                <div class="zig-text">
+                  <div style="font-size: 1.3em;">Implementation</div>
+                  <p style="opacity: 0.9;">
+                    Unsurprisingly, implementing the program in real life led to some challenges. We had to switch from
+                    path planning using Cartesian path planning to joint values.
+                  </p>
+                </div>
+                <div class="zig-media">
+                  <div class="container proj-card" style="margin: 0;">
+                    <div class="container-header">irl_side_angle.mp4
+                        <div class="circle-container">
+                        <div class="circle" style="background-color: #00FF41"></div>
+                        <div class="circle" style="background-color: #FF004D"></div>
+                        </div>
+                    </div>
+                    <div class="container-content">
+                        <video
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            preload="metadata"
+                            style="width: 65%; height: auto">
+                            <source src="../../assets/images/UR5e/irl_side_angle.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                            </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Row 3: Takeaways -->
+              <div class="zig-row">
+                <div class="zig-text">
+                  <div style="font-size: 1.3em;">Takeaways</div>
+                  <p style="opacity: 0.9;">
+                    This project has applicability to fields that involve mixing hazardous chemical substances.
+                    The next step is using actual liquids!
+                  </p>
+                </div>
+                <div class="zig-media">
+                  <div class="container proj-card" style="margin: 0;">
+                    <div class="container-header">irl_jake_angle.mp4
+                        <div class="circle-container">
+                        <div class="circle" style="background-color: #00FF41"></div>
+                        <div class="circle" style="background-color: #FF004D"></div>
+                        </div>
+                    </div>
+                    <div class="container-content">
+                        <video
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            preload="metadata"
+                            style="width: 100%; height: auto">
+                            <source src="../../assets/images/UR5e/irl_jake_angle.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                            </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /zigzag -->
+
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /layout -->
+
+    <!-- Background blobs -->
+    <div class="blob" style="--color: #00FF41"></div>
+    <div class="blob" style="--color: #FF004D"></div>
+    <div class="blob" style="--color: #00CAFF"></div>
+
+  </div><!-- /arena -->
+
+  <!-- Blob animation -->
+  <script>
+    const arena = document.getElementById("arena");
+    const blobs = document.getElementsByClassName("blob");
+    const nblobs = blobs.length;
+    const speed = 2;
+
+    const maxX = arena.clientWidth - blobs[0].offsetWidth;
+    const maxY = arena.clientHeight - blobs[0].offsetHeight;
+
+    let x = Array.from({ length: nblobs }, () => Math.floor(Math.random() * maxX));
+    let y = Array.from({ length: nblobs }, () => Math.floor(Math.random() * maxY));
+    let vx = Array.from({ length: nblobs }, () => (Math.random() < 0.5 ? speed : -speed));
+    let vy = Array.from({ length: nblobs }, () => (Math.random() < 0.5 ? speed : -speed));
+
+    function animate() {
+      for (let i = 0; i < nblobs; i++) {
+        x[i] += vx[i];
+        y[i] += vy[i];
+
+        if (x[i] <= 0) { x[i] = 0; vx[i] = Math.abs(vx[i]); }
+        else if (x[i] >= maxX) { x[i] = maxX; vx[i] = -Math.abs(vx[i]); }
+
+        if (y[i] <= 0) { y[i] = 0; vy[i] = Math.abs(vy[i]); }
+        else if (y[i] >= maxY) { y[i] = maxY; vy[i] = -Math.abs(vy[i]); }
+
+        blobs[i].style.left = x[i] + "px";
+        blobs[i].style.top  = y[i] + "px";
+      }
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+
+</body>
+</html>
