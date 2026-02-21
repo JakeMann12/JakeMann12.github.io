@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ShotBot - Jake Mann" />
+  <title>ShotBot - Jake Mann</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../../assets/images/Site Files/Logo2.png" type="image/x-icon" />
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="../../style.css" />
+
+  <!-- Icons / Fonts -->
+  <script src="https://kit.fontawesome.com/1eccfb7f64.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+  <link href="https://db.onlinewebfonts.com/c/0253e1401c58c5911902cdca02857f0e?family=White+Rabbit+Regular" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="arena">
+
+    <!-- Header (kept consistent with your current site) -->
+    <div class="header">
+      <div>
+        <a href="../../index.html"><div>Jake Mann</div></a>
+      </div>
+
+      <div class="nav-bar">
+        <a href="../../index.html"><div>About Me</div></a>
+        <div class="vertical-line"></div>
+        <a href="../../work/index.html"><div>Work</div></a>
+        <div class="vertical-line"></div>
+        <a href="../../play/index.html"><div>Play</div></a>
+        <div class="vertical-line"></div>
+        <a href="../../assets/Jake_Mann_Tech_Resume_2025.pdf"><div>CV</div></a>
+      </div>
+
+      <details class="nav-dropdown">
+        <summary></summary>
+        <nav class="dropdown">
+          <a href="../../index.html">About Me</a>
+          <a href="../../work/index.html">Work</a>
+          <a href="../../play/index.html">Play</a>
+          <a href="../../assets/Jake_Mann_Tech_Resume_2025.pdf">CV</a>
+        </nav>
+      </details>
+
+      <div class="overlay" style="z-index: 11"></div>
+    </div>
+
+    <hr />
+
+    <!-- Main centered two-column layout -->
+    <div class="layout">
+
+      <!-- LEFT COLUMN: Summary + Skills (two stacked small containers) -->
+      <div class="panel-small">
+
+        <!-- Summary -->
+        <div class="container" style="z-index: 10;">
+          <div class="container-header">
+            project_summary.txt
+            <div class="circle-container">
+              <div class="circle" style="background-color: #00FF41"></div>
+              <div class="circle" style="background-color: #FF004D"></div>
+            </div>
+          </div>
+
+          <div class="container-content">
+            <div style="margin: 0px auto; font-size: 1.4em; text-align: center;">
+              ShotBot
+            </div>
+
+            <div style="opacity: 0.85;">
+              <hr style="opacity: 0.5;" />
+              <p style="text-align: left; margin: 0 auto;">
+                Helping 21 arrive in style.
+              </p>
+              <!-- Source: Wix ShotBot page copy -->
+              <!-- [1](https://jmann6702.wixsite.com/jake/shotbot) -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Top Skills -->
+        <div class="container" style="z-index: 10;">
+          <div class="container-header">
+            top_skills.txt
+            <div class="circle-container">
+              <div class="circle" style="background-color: #00FF41"></div>
+              <div class="circle" style="background-color: #FF004D"></div>
+            </div>
+          </div>
+
+          <div class="container-content">
+            <ul class="list" style="margin-top: 0;">
+              <li>Rapid Prototyping</li>
+              <li>Laser Cutting</li>
+              <li>Arduino Hardware/Software Integration</li>
+              <li>Ultrasonic Sensing</li>
+              <li>Troubleshooting</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MIDDLE COLUMN: Main narrative -->
+      <div class="panel-large">
+        <div class="container" style="z-index: 10;">
+          <div class="container-header">
+            shotbot.md
+            <div class="circle-container">
+              <div class="circle" style="background-color: #00FF41"></div>
+              <div class="circle" style="background-color: #FF004D"></div>
+            </div>
+          </div>
+
+          <div class="container-content">
+
+            <div class="section">ShotBot</div>
+
+            <!-- ✅ Zig-zag wrapper (same as Iron Mann template) -->
+            <div class="zigzag" style="margin-top: 0.8em;">
+
+              <!-- Overview (text left, image right) -->
+              <div class="zig-row">
+                <div class="zig-text">
+                  <div style="font-size: 1.3em;"></div>
+                  <p style="opacity: 0.9;">
+                    Making use of an ultrasonic sensor and a peristaltic pump, the ShotBot is capable of enhancing any responsibly enjoyed occasion.
+                    It dispenses an internally contained liquid until it detects that the detected height has increased by 2 cm.
+                  </p>
+                  <!-- [1](https://jmann6702.wixsite.com/jake/shotbot) -->
+                </div>
+
+                <div class="zig-media">
+                  <div class="proj-grid" style="margin-top: 16px;">
+                    <div class="container proj-card">
+                      <div class="container-header">
+                        ShotBot Complete.jpg
+                        <div class="circle-container">
+                          <div class="circle" style="background-color: #00FF41"></div>
+                          <div class="circle" style="background-color: #FF004D"></div>
+                        </div>
+                      </div>
+                      <div class="container-content">
+                        <img
+                          src="../../assets/images/ShotBot/ShotBot Complete.JPEG"
+                          alt="ShotBot complete"
+                          style="width: 100%; height: auto;"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- What's going on inside? (auto flips: image left, text right) -->
+              <div class="zig-row">
+                <div class="zig-text">
+                  <div style="font-size: 1.3em;">What's going on inside?</div>
+                  <p style="opacity: 0.9;">
+                    Early iterations using a push-button sensor were quickly deemed clunky and inefficient. The ultrasonic sensor simplified the UI
+                    and can quantify a responsible pour.
+                  </p>
+                  <!-- [1](https://jmann6702.wixsite.com/jake/shotbot) -->
+                </div>
+
+                <div class="zig-media">
+                  <div class="proj-grid" style="margin-top: 16px;">
+                    <div class="container proj-card">
+                      <div class="container-header">
+                        ShotBot Internals.jpg
+                        <div class="circle-container">
+                          <div class="circle" style="background-color: #00FF41"></div>
+                          <div class="circle" style="background-color: #FF004D"></div>
+                        </div>
+                      </div>
+                      <div class="container-content">
+                        <img
+                          src="../../assets/images/ShotBot/ShotBot Circuit.JPEG"
+                          alt="ShotBot internals"
+                          style="width: 100%; height: auto;"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- And outside? (text left, image right) -->
+              <div class="zig-row">
+                <div class="zig-text">
+                  <div style="font-size: 1.3em;">And outside?</div>
+                  <p style="opacity: 0.9;">
+                    The casing was laser cut into 1/8&quot; wood and utilized a custom finger joint design. Gatsby making a toast was a final detail.
+                  </p>
+                  <!-- [1](https://jmann6702.wixsite.com/jake/shotbot) -->
+                </div>
+
+                <div class="zig-media">
+                  <div class="proj-grid" style="margin-top: 16px;">
+                    <div class="container proj-card">
+                      <div class="container-header">
+                        ShotBot Case.jpg
+                        <div class="circle-container">
+                          <div class="circle" style="background-color: #00FF41"></div>
+                          <div class="circle" style="background-color: #FF004D"></div>
+                        </div>
+                      </div>
+                      <div class="container-content">
+                        <img
+                          src="../../assets/images/ShotBot/Laser cutting template.jpg"
+                          alt="ShotBot casing"
+                          style="width: 100%; height: auto;"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Mounting the sensor (auto flips) -->
+              <div class="zig-row">
+                <div class="zig-text">
+                  <div style="font-size: 1.3em;">Mounting the sensor</div>
+                  <p style="opacity: 0.9;">
+                    Keeping the ultrasonic sensor at a constant height was a challenge. Flush mounting a custom print (with a hole for the pump)
+                    allowed me to keep it rigidly mounted, albeit with only a friction fit for easy troubleshooting.
+                  </p>
+                  <!-- [1](https://jmann6702.wixsite.com/jake/shotbot) -->
+                </div>
+
+                <div class="zig-media">
+                  <div class="proj-grid" style="margin-top: 16px;">
+                    <div class="container proj-card">
+                      <div class="container-header">
+                        Sensor Mount.jpg
+                        <div class="circle-container">
+                          <div class="circle" style="background-color: #00FF41"></div>
+                          <div class="circle" style="background-color: #FF004D"></div>
+                        </div>
+                      </div>
+                      <div class="container-content">
+                        <img
+                          src="../../assets/images/ShotBot/Printed bit in casing.jpg"
+                          alt="Sensor mount"
+                          style="width: 100%; height: auto;"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Future iterations (text left, image right) -->
+              <div class="zig-row">
+                <div class="zig-text">
+                  <div style="font-size: 1.3em;">Future iterations</div>
+                  <p style="opacity: 0.9;">
+                    Future iterations will place the tube slightly further away, as at times it interferes with distance readings.
+                  </p>
+                  <!-- [1](https://jmann6702.wixsite.com/jake/shotbot) -->
+                </div>
+
+                <div class="zig-media">
+                  <div class="proj-grid" style="margin-top: 16px;">
+                    <div class="container proj-card">
+                      <div class="container-header">
+                        ShotBot Complete.JPEG
+                        <div class="circle-container">
+                          <div class="circle" style="background-color: #00FF41"></div>
+                          <div class="circle" style="background-color: #FF004D"></div>
+                        </div>
+                      </div>
+                      <div class="container-content">
+                        <img
+                          src="../../assets/images/ShotBot/ShotBot Complete.JPEG"
+                          alt="ShotBot future"
+                          style="width: 100%; height: auto;"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /zigzag -->
+
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /layout -->
+
+    <!-- blobs -->
+    <div class="blob" style="--color: #00FF41"></div>
+    <div class="blob" style="--color: #FF004D"></div>
+    <div class="blob" style="--color: #00CAFF"></div>
+
+  </div><!-- /arena -->
+
+  <!-- Blob animation -->
+  <script>
+    const arena = document.getElementById("arena");
+    const blobs = document.getElementsByClassName("blob");
+    const nblobs = blobs.length;
+    const speed = 2;
+
+    const maxX = arena.clientWidth - blobs[0].offsetWidth;
+    const maxY = arena.clientHeight - blobs[0].offsetHeight;
+
+    let x = Array.from({ length: nblobs }, () => Math.floor(Math.random() * maxX));
+    let y = Array.from({ length: nblobs }, () => Math.floor(Math.random() * maxY));
+    let vx = Array.from({ length: nblobs }, () => (Math.random() < 0.5 ? speed : -speed));
+    let vy = Array.from({ length: nblobs }, () => (Math.random() < 0.5 ? speed : -speed));
+
+    function animate() {
+      for (let i = 0; i < nblobs; i++) {
+        x[i] += vx[i];
+        y[i] += vy[i];
+
+        if (x[i] <= 0) { x[i] = 0; vx[i] = Math.abs(vx[i]); }
+        else if (x[i] >= maxX) { x[i] = maxX; vx[i] = -Math.abs(vx[i]); }
+
+        if (y[i] <= 0) { y[i] = 0; vy[i] = Math.abs(vy[i]); }
+        else if (y[i] >= maxY) { y[i] = maxY; vy[i] = -Math.abs(vy[i]); }
+
+        blobs[i].style.left = x[i] + "px";
+        blobs[i].style.top  = y[i] + "px";
+      }
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+
+</body>
+</html>
